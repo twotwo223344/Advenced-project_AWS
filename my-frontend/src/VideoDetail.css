@@ -1,0 +1,165 @@
+/* ✅ 상세페이지 전체 컨테이너 */
+.video-detail-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 100px; /* ✅ 네비바와 겹치는 문제 해결 */
+}
+
+/* ✅ 영상 + 자막 가로 정렬 */
+.video-caption-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ✅ 영상 크기 */
+.video-content iframe {
+  flex: 3;
+  width: 750px;
+  height: 420px;
+  border-radius: 10px;
+  max-width: 100%; /* ✅ 반응형 적용 */
+}
+
+/* ✅ 자막 컨테이너 */
+.captions-container {
+  flex: none;
+  width: 220px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  min-width: 220px;
+  box-sizing: border-box;
+}
+
+/* ✅ 자막 리스트 */
+.captions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ✅ 자막 개별 항목 */
+.caption-item {
+  margin-bottom: 8px;
+  font-size: 14px; /* ✅ 가독성 향상 */
+}
+
+/* ✅ 타임스탬프 버튼 */
+.timestamp {
+  color: #2563eb;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.timestamp:hover {
+  color: #1d4ed8;
+}
+
+/* ✅ 해시태그 스타일 */
+.hashtags {
+  width: 100%;
+  max-width: 700px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+/* ✅ 요약 스타일 */
+.summary {
+  width: 100%;
+  max-width: 700px;
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* ✅ 목록 보기 버튼 스타일 */
+.back-to-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.back-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* ✅ 버튼 크기 확대 */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background: #0056b3;
+}
+
+/* ✅ 📌 모바일 최적화 적용 */
+@media (max-width: 768px) {
+  .video-detail-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* ✅ 영상과 자막 세로 정렬 */
+  .video-caption-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ✅ 비디오 크기 조정 */
+  .video-content iframe {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* ✅ 화면에 너무 커지지 않도록 제한 */
+  }
+
+  /* ✅ 자막 컨테이너 조정 */
+  .captions-container {
+    width: 90%;
+    max-width: 400px;
+    max-height: 250px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  /* ✅ 제목 크기 조정 */
+  .hashtags,
+  .summary {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  /* ✅ 버튼 크기 조정 */
+  .back-button {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}

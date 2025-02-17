@@ -1,0 +1,26 @@
+requirements = """\
+pip install Django==5.1.5
+pip install django-extensions==3.2.3
+pip install google-api-core==2.24.1rc1
+pip install google-api-python-client==2.159.0
+pip install google-auth==2.38.0
+pip install google-auth-httplib2==0.2.0
+pip install googleapis-common-protos==1.66.0
+pip install httplib2==0.22.0
+pip install proto-plus==1.26.0rc1
+pip install protobuf==5.29.3
+pip install psycopg2==2.9.10
+pip install pyasn1==0.6.1
+pip install pyasn1_modules==0.4.1
+pip install pyparsing==3.2.1
+pip install pytube==15.0.0
+pip install rsa==4.9
+pip install uritemplate==4.1.1
+pip install youtube-transcript-api==0.6.3
+pip install PySocks
+pip install PyYAML
+pip install SQLAlchemy
+pip install annotated-types
+pip install google-generativeai
+python.exe -m pip install --upgrade pip
+"""

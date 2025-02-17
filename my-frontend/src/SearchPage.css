@@ -1,0 +1,100 @@
+/* ✅ 돋보기 아이콘 버튼 */
+.search-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 18px;
+  color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-icon-button:hover {
+  transform: scale(1.2);
+}
+
+/* ✅ 검색창 팝업 스타일 */
+.search-form-popup {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ✅ 검색창 너비를 일정하게 유지 */
+.search-form-popup input {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 500px;  /* 🔥 검색 전후 크기 동일하게 설정 */
+  max-width: 900px;  /* 🔥 최대 너비 설정 */
+  transition: width 0.3s ease-in-out;  /* 🔥 부드러운 애니메이션 추가 */
+}
+
+.search-form-popup button {
+  padding: 6px 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.search-form-popup button:hover {
+  background: #0056b3;
+}
+
+/* ✅ 드롭다운 스타일 */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding: 6px;
+  background: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  width: 100px;
+  z-index: 1000;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  text-align: left;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background: #f0f0f0;
+}
+
+/* ✅ 검색창 크기 강제 고정 */
+.search-input {
+  width: 900px !important;
+  max-width: 900px !important;
+  min-width: 900px !important;
+  height: 50px !important;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

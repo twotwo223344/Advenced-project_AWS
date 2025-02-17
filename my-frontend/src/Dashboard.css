@@ -1,0 +1,110 @@
+.dashboard-container {
+  max-width: 95%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ✅ 타이틀 스타일 */
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 70, 150, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+/* ✅ 가로 정렬 (Flexbox) */
+.dashboard-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ✅ 각 카테고리 박스 스타일 */
+.category-section {
+  flex: 1;
+  min-width: 300px; /* 최소 너비 지정 */
+  max-width: 400px;
+  background: rgba(249, 249, 249, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #377ccc;
+  text-align: center;
+}
+
+/* ✅ 정렬 버튼 */
+.sort-buttons {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.sort-buttons button {
+  padding: 8px 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.sort-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* ✅ 차트 크기 조절 */
+.chart-wrapper {
+  width: 100%;
+  height: 250px;
+}
+
+/* ✅ 장소 리스트 */
+.place-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.place-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* ✅ 📌 모바일 최적화 */
+@media (max-width: 768px) {
+  .dashboard-flex {
+      flex-direction: column; /* ✅ 모바일에서 한 줄 배치 */
+      align-items: center;
+  }
+
+  .category-section {
+      width: 90%; /* ✅ 모바일에서는 너비 조정 */
+      max-width: 95%;
+  }
+
+  .dashboard-title {
+      font-size: 20px; /* ✅ 모바일에서 타이틀 크기 줄이기 */
+  }
+
+  .sort-buttons button {
+      padding: 6px 12px;
+      font-size: 13px;
+  }
+
+  .chart-wrapper {
+      height: 220px; /* ✅ 차트 크기 줄이기 */
+  }
+
+  .place-list li {
+      font-size: 13px; /* ✅ 모바일에서 폰트 크기 살짝 줄이기 */
+  }
+}

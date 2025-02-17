@@ -1,0 +1,163 @@
+/* ✅ 검색창 컨테이너 */
+.search-form-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ✅ 검색 바 */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: nowrap; /* ✅ 모바일에서도 가로 정렬 유지 */
+}
+
+/* ✅ 검색 입력 필드 */
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+  height: 42px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ 검색 버튼 */
+.search-button {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+  width: 120px; /* ✅ 가로 길이 유지 */
+  height: 42px;
+  text-align: center;
+}
+
+.search-button:hover {
+  background: #f0f0f0;
+}
+
+/* ✅ 드롭다운 컨테이너 */
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ✅ 드롭다운 버튼 */
+.dropdown-toggle {
+  padding: 10px 15px;
+  background: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  width: 120px; /* ✅ 가로 길이 유지 */
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* ✅ 드롭다운 메뉴 */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  width: 120px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown-menu button:hover {
+  background: #f0f0f0;
+}
+
+/* ✅ 검색창 팝업 스타일 */
+.search-form-popup {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ✅ 돋보기 아이콘 버튼 */
+.search-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 18px;
+  color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-icon-button:hover {
+  transform: scale(1.2);
+}
+
+/* ✅ 📌 모바일 최적화 */
+@media (max-width: 768px) {
+  .search-form-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .search-bar {
+    flex-wrap: nowrap; /* ✅ 모바일에서도 가로 정렬 유지 */
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .search-input {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .dropdown-toggle {
+    font-size: 14px;
+    width: 110px;
+  }
+
+  .search-button {
+    width: 110px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .suggestions-list {
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+}

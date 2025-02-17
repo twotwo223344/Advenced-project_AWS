@@ -1,0 +1,38 @@
+/* .navbar {
+    background: transparent;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 10px 10px 20px gray;
+  }
+  
+  .navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-icon {
+    font-size: 1.8rem;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-icon:hover {
+    transform: scale(1.2);
+  }
+   */

@@ -1,0 +1,149 @@
+/* ✅ opendoor 최상단 섹션 */
+.opendoor-container {
+  width: 100%;
+  overflow-y: auto; /* ✅ 스크롤 허용 */
+}
+
+/* ✅ opendoor 전용 배경 */
+.opendoor-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ 배경 비디오 - 화면을 꽉 채우도록 설정 */
+.background-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* ✅ opendoor 배경은 가장 뒤 */
+}
+
+/* ✅ 모바일에서 배경 비디오 최적화 */
+.mobile-video {
+  height: 100vh; /* 모바일에서도 전체 화면 채우기 */
+  object-fit: cover;
+}
+
+/* ✅ opendoor 콘텐츠 */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* ✅ 버튼 스타일 */
+.explore-btn {
+  background-color: rgba(0, 70, 150, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: rgba(0, 70, 150, 0.8);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+/* ✅ 리스트 및 대시보드 개별 섹션 */
+.section-container {
+  position: relative;
+  padding: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ✅ 리스트 및 대시보드 개별 배경 비디오 */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ✅ 리스트 및 대시보드 개별 배경 비디오만 왼쪽으로 이동 */
+.section-video {
+  width: 140%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: -480px;
+}
+
+/* ✅ 모바일에서 배경 비디오 크기 조정 */
+.mobile-section-video {
+  width: 100vw;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+}
+
+/* ✅ 반응형 디자인 추가 */
+@media (max-width: 768px) {
+  /* ✅ 모바일에서 배경 비디오 꽉 차게 조정 */
+  .background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  /* ✅ 모바일에서 리스트 및 대시보드 비디오 조정 */
+  .mobile-section-video {
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+  }
+
+  /* ✅ opendoor 섹션 내 여백 조정 */
+  .opendoor-section {
+    height: 100vh;
+    padding: 0;
+  }
+
+  /* ✅ 콘텐츠 크기 조정 */
+  .content {
+    width: 95%;
+    max-width: 600px;
+    font-size: 0.9rem;
+  }
+
+  /* ✅ 버튼 크기 조정 */
+  .explore-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  /* ✅ 모바일에서 텍스트 크기 조정 */
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .section-container {
+    padding: 30px; /* 모바일에서 패딩 줄이기 */
+  }
+}

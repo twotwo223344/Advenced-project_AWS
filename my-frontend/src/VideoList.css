@@ -1,0 +1,170 @@
+/* ✅ 영상과 자막을 가로 정렬 & 중앙 배치 */
+.list-video-caption-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* ✅ 중앙 정렬 */
+  align-items: flex-start;
+  position: relative;
+}
+
+/* ✅ 영상 크기 */
+.list-video-iframe {
+  width: 900px;
+  height: 420px;
+  border-radius: 10px;
+}
+
+.list-title {
+  color: white; /* ✅ 글자 색상 흰색 */
+  text-align: center; /* ✅ 가운데 정렬 */
+  font-weight: bold; /* ✅ 글씨 두껍게 */
+  font-size: 1.2rem; /* ✅ 기존 크기 유지 */
+  background-color: rgba(0, 70, 150, 0.5); /* ✅ 반투명한 배경 적용 */
+  padding: 8px 16px; /* ✅ 안쪽 여백 조정 */
+  border-radius: 5px; /* ✅ 모서리 둥글게 */
+  display: block; /* ✅ 블록 요소로 만들어 너비 조절 가능 */
+  width: fit-content; /* ✅ 내용 크기에 맞춤 */
+  margin: 10px auto; /* ✅ 상하 여백 10px, 좌우 자동 (중앙 정렬) */
+}
+
+/* ✅ 자막 컨테이너 (정확한 높이 설정) */
+.list-captions-container {
+  flex: none;
+  width: 220px;
+  max-height: 420px; /* ✅ 영상 높이와 동일하게 설정 */
+  overflow-y: auto;
+  background: rgba(249, 249, 249, 0.8); /* ✅ 0.8은 80% 불투명 */
+  padding: 10px; /* ✅ 기존 15px에서 줄여서 높이 보정 */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  min-width: 220px;
+  position: relative;
+  box-sizing: border-box; /* ✅ padding이 height에 포함되도록 설정 */
+}
+
+/* ✅ 자막 리스트 스타일 */
+.list-captions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-caption-item {
+  margin-bottom: 8px;
+}
+
+/* ✅ 타임스탬프 버튼 */
+.list-timestamp {
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.list-timestamp:hover {
+  color: #1d4ed8;
+}
+
+/* ✅ 제목 중앙 정렬 및 색상 변경 */
+.list-video-title {
+  text-align: center; /* ✅ 제목을 중앙으로 정렬 */
+  font-size: 15px; /* ✅ 기존 크기 유지 */
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ✅ 기본 링크 스타일 */
+.list-video-title a {
+  color: white; /* ✅ 기본 글자 색 */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: none; /* ✅ 밑줄 제거 */
+  transition: color 0.1s ease-in-out, text-shadow 0.1s ease-in-out; /* ✅ 색상과 그림자 부드럽게 변경 */
+}
+
+/* ✅ 마우스를 올렸을 때 (은은한 파란색으로 변경) */
+.list-video-title a:hover {
+  color: rgba(0, 70, 150, 0.8); /* ✅ 연한 파란색으로 변경 */
+  text-shadow: 0px 0px 5px rgba(0, 70, 150, 0.3); /* ✅ 부드러운 그림자 효과 */
+  transform: scale(1.05); /* ✅ 살짝 확대 (고급스럽게) */
+}
+
+/* ✅ 페이지네이션 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination button:hover {
+  background: #0056b3;
+}
+
+.pagination span {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ✅ 📌 모바일 최적화 추가 (@media 적용) */
+@media (max-width: 768px) {
+  /* ✅ 모바일에서 전체적인 레이아웃 조정 */
+  .list-container {
+    padding: 10px;
+  }
+
+  /* ✅ 모바일에서 영상과 자막 세로 정렬 */
+  .list-video-caption-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ✅ 비디오 크기 조정 */
+  .list-video-iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  /* ✅ 자막 컨테이너 조정 */
+  .list-captions-container {
+    width: 90%;
+    max-width: 400px;
+    max-height: 250px;
+    padding: 8px;
+    border-radius: 6px;
+  }
+
+  /* ✅ 제목 크기 조정 */
+  .list-title {
+    font-size: 1.1rem; /* ✅ 모바일에서 제목 크기 살짝 축소 */
+    padding: 6px 12px;
+  }
+
+  /* ✅ 페이지네이션 스타일 조정 */
+  .pagination {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .pagination button {
+    width: 100%;
+  }
+}

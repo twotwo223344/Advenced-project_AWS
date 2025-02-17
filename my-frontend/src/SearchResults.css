@@ -1,0 +1,197 @@
+.search-container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ✅ 검색 제목 스타일 (리스트 페이지와 통일) */
+.search-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 70, 150, 0.5); /* ✅ 반투명한 배경 */
+  color: white; /* ✅ 글자 색상 흰색 */
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+.search-subtitle {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* ✅ 영상 & 자막 가로 정렬 */
+.search-video-caption-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ✅ 유튜브 영상 크기 */
+.search-video-iframe {
+  width: 900px;
+  height: 420px;
+  border-radius: 10px;
+}
+
+/* ✅ 제목 스타일 (리스트와 동일하게, 가독성 강화) */
+.search-video-title {
+  font-size: 18px; /* ✅ 크기 증가 */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+  color: grey; /* ✅  글자 */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* ✅ 검은색 그림자 추가 */
+}
+
+.search-video-title a {
+  color: grey;
+  text-decoration: none;
+}
+
+.search-video-title a:hover {
+  text-decoration: underline;
+  color: #2563eb;
+}
+
+/* ✅ 자막 컨테이너 스타일 */
+.search-captions-container {
+  flex: none;
+  width: 220px;
+  max-height: 420px;
+  overflow-y: auto;
+  background: rgba(249, 249, 249, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  min-width: 220px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* ✅ 자막 리스트 */
+.search-captions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ✅ 자막 개별 항목 */
+.search-caption-item {
+  margin-bottom: 8px;
+}
+
+/* ✅ 타임스탬프 버튼 스타일 */
+.search-timestamp {
+  color: #2563eb;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search-timestamp:hover {
+  color: #1d4ed8;
+}
+
+/* ✅ 페이지네이션 (리스트와 동일하게 가독성 강화) */
+.search-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* ✅ 페이지네이션 버튼 스타일 */
+.search-page-btn {
+  padding: 10px 15px; /* ✅ 크기 증가 */
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.1s ease-in-out;
+}
+
+.search-page-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* ✅ 페이지네이션 텍스트 스타일 (가독성 높이기) */
+.search-page-number {
+  font-size: 18px; /* ✅ 크기 증가 */
+  font-weight: bold;
+  color: grey; /* ✅  */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* ✅ 검은색 그림자 추가 */
+  padding: 5px 10px;
+}
+
+/* ✅ 📌 모바일 최적화 추가 (@media 적용) */
+@media (max-width: 768px) {
+  /* ✅ 모바일에서 전체적인 레이아웃 조정 */
+  .search-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* ✅ 검색 제목 크기 조정 */
+  .search-title {
+    font-size: 22px;
+  }
+
+  .search-subtitle {
+    font-size: 14px;
+  }
+
+  /* ✅ 모바일에서 영상과 자막 세로 정렬 */
+  .search-video-caption-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ✅ 비디오 크기 조정 */
+  .search-video-iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  /* ✅ 자막 컨테이너 조정 */
+  .search-captions-container {
+    width: 90%;
+    max-width: 400px;
+    max-height: 250px;
+    padding: 8px;
+    border-radius: 6px;
+  }
+
+  /* ✅ 제목 크기 조정 */
+  .search-title {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+  }
+
+  /* ✅ 페이지네이션 스타일 조정 */
+  .search-pagination {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .search-page-btn {
+    width: 100%;
+  }
+}
