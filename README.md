@@ -27,6 +27,22 @@ AI 기반으로 부산지역 여행 영상을 검색하는 프로젝트입니다
 
 <img src="데이터흐름도.png" alt="데이터 흐름도" width="600">
 
+## 프로젝트 폴더 구조
+root/
+│── mysite/  # Django 백엔드
+│   │── config/  # 환경설정 및 URL 설정
+│   │── kakao_api/  # Kakao API 관련 크롤링 코드
+│   │── youtube_api/  # YouTube API 연동 코드
+│   └── database/  # PostgreSQL 관련 설정
+│
+│── my-frontend/  # React 프론트엔드
+│   │── public/  # 정적 파일 (이미지, HTML)
+│   │── src/  # 소스 코드
+│   │── package.json  # 프론트엔드 패키지 정보
+│   │── README.md  # 프론트엔드 문서화 파일
+│
+└── README.md  # 프로젝트 설명 파일
+
 ## 기술 스택
 - **Frontend:** React, TailwindCSS, MUI
 - **Backend:** Django, PostgreSQL
