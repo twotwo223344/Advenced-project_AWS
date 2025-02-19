@@ -1,3 +1,5 @@
+
+
 # Travel Video Search AI
 AI 기반으로 여행 영상을 검색하는 프로젝트입니다.
 
@@ -23,22 +25,22 @@ AI 기반으로 여행 영상을 검색하는 프로젝트입니다.
 - **Deployment:** AWS (EC2)
 
 ## 설치 및 실행 방법
-```bash
+```
 git clone https://github.com/사용자명/레포지토리명.git
 cd 레포지토리명
 
-# Backend 실행
+-Backend 실행
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 
-# Frontend 실행
+-Frontend 실행
 cd frontend
 npm install
 npm start
+```
 
-<hr>
-## 팀소개 
+## 팀 소개
 -팀명 : 휴먼원정대
 -팀원 : 이준혁(팀장), 배휘호, 이기성, 김민석
 
