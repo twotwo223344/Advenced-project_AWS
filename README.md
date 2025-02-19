@@ -37,12 +37,10 @@ root/
 │   └── database/  # PostgreSQL 관련 설정
 │
 │── my-frontend/  # React 프론트엔드
-│   │── public/  # 정적 파일 (이미지, HTML)
-│   │── src/  # 소스 코드
-│   │── package.json  # 프론트엔드 패키지 정보
-│   │── README.md  # 프론트엔드 문서화 파일
-│
-└── README.md  # 프로젝트 설명 파일
+    │── public/  # 정적 파일 (이미지, HTML)
+    │── src/  # 소스 코드
+    │── package.json  # 프론트엔드 패키지 정보
+    
 ```
 
 ## 기술 스택
