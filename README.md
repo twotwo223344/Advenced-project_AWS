@@ -28,6 +28,7 @@ AI 기반으로 부산지역 여행 영상을 검색하는 프로젝트입니다
 <img src="데이터흐름도.png" alt="데이터 흐름도" width="600">
 
 ## 프로젝트 폴더 구조
+```plaintext
 root/
 │── mysite/  # Django 백엔드
 │   │── config/  # 환경설정 및 URL 설정
