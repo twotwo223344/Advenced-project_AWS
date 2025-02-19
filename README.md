@@ -72,4 +72,4 @@ npm start
 -팀원 : 이준혁(팀장), 배휘호, 이기성, 김민석
 
 
-<img src="team.png" alt="팀원 소개" width="600">
+![팀원 소개](team.png)
