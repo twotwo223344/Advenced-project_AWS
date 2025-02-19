@@ -19,7 +19,7 @@ AI 기반으로 부산지역 여행 영상을 검색하는 프로젝트입니다
 - 배포 및 최적화 (AWS)
 
 ## 프로젝트 데이터 흐름도
-1.Django 백엔드가 YouTube API를 활용해 영상 데이터를 가져옴
+- Django 백엔드가 YouTube API를 활용해 영상 데이터를 가져옴
 2.Kakao Map 크롤링을 통해 장소 리뷰 수집
 3.Gemini API를 활용해 영상 & 리뷰 요약 생성
 4.PostgreSQL Database에 저장
