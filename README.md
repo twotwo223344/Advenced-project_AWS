@@ -43,7 +43,7 @@ root/
 │   │── README.md  # 프론트엔드 문서화 파일
 │
 └── README.md  # 프로젝트 설명 파일
-
+```
 
 ## 기술 스택
 - **Frontend:** React, TailwindCSS, MUI
