@@ -55,7 +55,7 @@ root/
       </ul>
     </td>
     <td>
-      <img src="pic/tech-stack.png" alt="pic/기술스택.png" width="300">
+      <img src="pic/기술스택.png" alt="기술스택" width="300">
     </td>
   </tr>
 </table>
