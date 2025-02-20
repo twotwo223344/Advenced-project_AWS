@@ -44,11 +44,21 @@ root/
 ```
 
 ## 기술 스택
-- **Frontend:** React, TailwindCSS, MUI
-- **Backend:** Django, PostgreSQL
-- **AI Model:** OpenAI Whisper (자막 기반 검색), Gemini API
-- **Deployment:** AWS (EC2)
-
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li><strong>Frontend:</strong> React, TailwindCSS, MUI</li>
+        <li><strong>Backend:</strong> Django, PostgreSQL</li>
+        <li><strong>AI Model:</strong> OpenAI Whisper (자막 기반 검색), Gemini API</li>
+        <li><strong>Deployment:</strong> AWS (EC2)</li>
+      </ul>
+    </td>
+    <td>
+      <img src="pic/tech-stack.png" alt="pic/기술스택" width="300">
+    </td>
+  </tr>
+</table>
 ## 설치 및 실행 방법
 ```
 git clone https://github.com/사용자명/레포지토리명.git
