@@ -25,7 +25,7 @@ AI 기반으로 부산지역 여행 영상을 검색하는 프로젝트입니다
 - PostgreSQL Database에 저장
 - React 프론트엔드가 Django API에서 데이터를 가져와 UI에 표시
 
-<img src="pic/데이터흐름도.png" alt="데이터 흐름도" width="600">
+<img src="pic/흐름도.png" alt="데이터 흐름도" width="600">
 
 ## 프로젝트 폴더 구조
 ```plaintext
