@@ -66,7 +66,8 @@ npm start
 ```
 
 ## 실행 화면
-<img src="시작화면.png" alt="화면" width="800">
+<img src="시작화면.png" alt="화면" width="500">
+<img src="대시보드.png" alt="대시보드" width="500">
 
 ## 팀 소개
 -팀명 : 휴먼원정대
