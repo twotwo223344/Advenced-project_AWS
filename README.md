@@ -66,8 +66,16 @@ npm start
 ```
 
 ## 실행 화면
-<img src="시작화면.png" alt="화면" width="500">
-<img src="pic/대시보드.png" alt="대시보드" width="500">
+<table>
+  <tr>
+    <td><img src="pic/시작화면.png" alt="시작화면" width="400"></td>
+    <td><img src="pic/대시보드.png" alt="대시보드" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="pic/검색창.png" alt="검색" width="400"></td>
+    <td><img src="pic/상세.png" alt="상세" width="400"></td>
+  </tr>
+</table>
 
 ## 팀 소개
 -팀명 : 휴먼원정대
