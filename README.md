@@ -1,6 +1,7 @@
 
 
-# Travel Video Search AI
+# Travel Video Search AI Service Project
+
 AI 기반으로 부산지역 여행 영상을 검색하는 프로젝트입니다.
 
 ## 주요 기능
@@ -87,6 +88,39 @@ npm start
     <td><img src="pic/상세.png" alt="상세" width="400"></td>
   </tr>
 </table>
+
+## 기능 시연 영상
+
+각 기능별 동작 시연을 `.gif`로 확인하실 수 있습니다.  
+GitHub에서 바로 재생되며, 별도 클릭 없이 자동으로 동작 모습을 보여줍니다.
+
+<table>
+  <tr>
+    <td><strong>1. 메인페이지</strong></td>
+    <td><strong>2. 타임스탬프</strong></td>
+  </tr>
+  <tr>
+    <td><img src="pic/메인페이지.gif" alt="메인페이지 시연" width="400"></td>
+    <td><img src="pic/타임스탬프.gif" alt="타임스탬프 시연" width="400"></td>
+  </tr>
+  <tr>
+    <td><strong>3. 검색 Top5</strong></td>
+    <td><strong>4. 상세페이지</strong></td>
+  </tr>
+  <tr>
+    <td><img src="pic/검색_top5.gif" alt="검색 Top5 시연" width="400"></td>
+    <td><img src="pic/상세페이지.gif" alt="상세페이지 시연" width="400"></td>
+  </tr>
+  <tr>
+    <td><strong>5. 대시보드</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="pic/대시보드.gif" alt="대시보드 시연" width="400"></td>
+    <td></td>
+  </tr>
+</table>
+
 
 ## 팀 소개
 -팀명 : 휴먼원정대
